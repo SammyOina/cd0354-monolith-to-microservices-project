@@ -12,7 +12,6 @@ before_script:
   - echo "no tests"
 
 script:
-docker build -t udagram-api-feed ./udagram-api-feed
 - docker build -t sammyoina/udagram-frontend:v1 ./udagram-frontend
 - docker build -t sammyoina/reverseproxy:v1 ./udagram-reverseproxy
 - docker build -t sammyoina/udagram-api-user:v1 ./udagram-api-user
